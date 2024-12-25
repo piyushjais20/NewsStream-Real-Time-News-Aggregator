@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News Api Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="navbar">
+      <a class="logo" href="index.html">News.</a>
+      <div class="search-container">
+        <input type="text" placeholder="Search news here..." id="search-input">
+        <button id="search-button">Search</button>
+      </div>
+      <button id="dark-mode-toggle">Toggle Dark Mode</button>
+    </div>
+  </nav>
+  <!-- Categories -->
+  <div class="categories">
+    <button class="category-btn" onclick="filterByCategory('technology')">Technology</button>
+    <button class="category-btn" onclick="filterByCategory('sports')">Sports</button>
+    <button class="category-btn" onclick="filterByCategory('business')">Business</button>
+    <button class="category-btn" onclick="filterByCategory('health')">Health</button>
+  </div>
+
+  <!-- News Articles -->
+  <main id="blog-container" class="obj-width"></main>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <button id="load-more">Load More</button>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
